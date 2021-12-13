@@ -1,0 +1,3610 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: Mont Light;
+  src: url(/Mont-ExtraLightDEMO.otf);
+}
+@font-face {
+  font-family: Mont Heavy;
+  src: url(/Mont-HeavyDEMO.otf);
+}
+
+.benefit{
+        width: -webkit-fill-available;
+    border: none;
+    outline: none;
+    margin-bottom: -1em;
+}
+
+.team{
+    padding-bottom:5em;
+    h3{
+    width: 82%;
+    margin: auto;
+    }
+}
+
+.team_wrapper{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+.team_item{
+    flex:1 0 24%
+}
+
+.cd{
+    color:black;
+    background:white;
+    text-align:center;
+    width:100%;
+    margin-top:-1em !important;
+    padding-top:2em;
+    font-size:2em
+}
+
+.csoon{
+    background:white;
+    color:black;
+    font-family:Mont Heavy;
+    padding: 1em 0.5em;
+    position:absolute;
+    width:20%;
+    text-align:end;
+    top:80vh;
+}
+
+.about{
+    background:black;
+    color:white;
+    text-align:center;
+    p{
+        width:70%;
+        margin:auto !important;
+        display:block;
+        font-family:Mont Light
+    }
+    b{
+        font-family:Mont Heavy
+    }
+    img{
+        margin:2em;
+        width:80%;
+        border:3px solid white
+    }
+}
+.team{
+    background:black;
+    color:white;
+    text-align:center;
+    padding-top:2em;
+    p{
+        width:70%;
+        margin:auto !important;
+        display:block;
+        font-family:Mont Light
+    }
+    b{
+        font-family:Mont Heavy
+    }
+    img{
+        margin:2em;
+        width:80%;
+        border:3px solid white
+    }
+}
+
+.himg{
+    width:100%
+}
+.pagination{
+    display: inline-flex !important;
+    width: -webkit-fill-available !important;
+    }
+
+.navbar{
+    width: 100%;
+    position:absolute;
+    padding: 1em;
+    img{
+        width:40%;
+        margin:auto;
+        position:absolute;
+        left:0;
+        right:0;
+    }
+}
+
+.main_gallery{
+    display:flex;
+    width:100%;
+    background:black
+}
+
+.main_gallery img{
+flex: 1 0 16%;
+    width:16%;
+}
+
+.main{
+    display:flex;
+    margin:auto;
+    height:450px;
+    background:black;
+    color:white;
+    padding:4em;
+    margin-top:-1em ;
+}
+
+.main img{
+    margin-left: auto; 
+margin-right: 0;
+}
+
+.main_wrapper{
+    display:block;
+}
+
+.main_wrapper h1{
+    font-size:50px;
+    font-weight:800
+}
+
+.main_wrapper p{
+    font-family:Mont Light;
+    width:80%;
+    font-weight:700
+}
+
+.connect_button{
+    padding: 1em 3em;
+    position:absolute;
+    margin-top: 10px;
+    right: 5%;
+    border-radius: 5px;
+    border: 1px solid #00000040;
+    font-weight: 700;
+    background: white;
+    color: black;
+    font-size:14px;
+    letter-spacing: 2px;
+    font-family:'Mont Heavy';
+        box-shadow: 0 5px 38px rgba(0,0,0,0.30);
+        transition: 0.5s all ease-out;
+
+}
+
+.connect_button:hover{
+        background: black;
+        cursor: pointer;
+        color: white;
+        box-shadow: 0 5px 38px rgba(0,0,0,0.70);
+    };
+
+.main_mint{
+    background:white;
+    color:black;
+    margin-top:-2%;
+    padding:5em;
+    text-align:center;
+    margin-top:1em;
+}
+
+.main_mint_p{
+    margin-bottom:2% !important
+}
+
+.main_mint_s:hover{
+    cursor:pointer
+}
+
+.main_mint_s:hover{
+    cursor:pointer
+}
+
+.mint_button{
+    padding:1em 4em;
+    border:1px solid white;
+    background:black;
+    color:white;
+    font-family:'Mont Heavy';
+    border-radius:1em;
+    font-size:18px;
+    margin-top:3%;
+    transition: all 0.2s ease
+}
+
+.mint_button:hover{
+    color:black;
+    background:white;
+    border:1px solid black;
+    cursor:pointer
+}
+
+.intro{
+    background:white;
+    width:55%;
+    height:350px;
+    margin:auto;
+    margin-top:2em
+}
+
+.intro p{
+    margin-bottom:1em !important
+}
+
+.roadmap{
+    
+    background:url('/abbg.svg');
+    background-size:cover;
+    color:white;
+    width:100%;
+    margin:auto;
+    margin-top:2em;
+    .roadmap_img{
+        width:100%
+    }
+}
+
+.roadmap_header{
+    width:100%;
+    margin:auto;
+    text-align:center;
+    margin-top:-2em;
+    margin-bottom:2em
+}
+
+.roadmap_wrapper{
+    display:flex;
+    width:70%;
+    margin:auto;
+    flex-wrap: wrap;
+    gap:1em;
+    margin-top:2em
+}
+
+.roadmap_wrapper_item{
+    flex:1 0 21%;
+    border:1px solid white;
+    border-radius:5px;
+    padding:1em;
+    height:300px
+
+}
+.roadmap_wrapper_item:hover{
+    flex:1 0 21%;
+    border:1px solid black;
+    border-radius:5px;
+    padding:1em;
+    height:300px;
+    background:white;
+    color:black;
+    
+        transition: 0.5s all ease-out;
+
+}
+
+.roadmap_wrapper_item h1{
+    font-family:'Mont Light';
+    width:auto
+}
+.roadmap_wrapper_item p{
+    font-family:'Mont Light';
+    width:auto;
+    font-size:14px
+}
+
+        .number{
+            margin:100px;
+            background:white;
+            margin-top:1em
+        }
+
+        .number p{
+      width: fit-content;
+    margin: auto;
+    font-size: 2em;
+
+        }
+        .minus{
+            width:20px;
+            height:20px;
+            background:#f2f2f2;
+            border-radius:4px;
+            padding:8px 5px 8px 5px;
+            border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      font-size:20px;
+        } 
+
+        .plus{
+            width:20px;
+            height:20px;
+            background:#f2f2f2;
+            border-radius:4px;
+            padding:8px 5px 8px 5px;
+            border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      font-size:20px;
+      width: fit-content;
+    margin: auto;
+    font-size: 2em;
+        }
+
+.page {
+    .attBox{
+        position: inherit;
+    height: auto;
+    width: 65%;
+    margin-left: 15%;
+    }
+
+    .disable-me-galler{
+        pointer-events: none;
+    }
+    .unlocks{
+        color:#ff7a00
+    }
+    .disable-me {
+        pointer-events: none;
+        text-align:center;
+        span{
+            font-size:0.8em;
+            margin-top:-2em;
+            color:#ff7a00
+        }
+    }
+    .mobile-team-img{display:none}
+    .mobile-hamb{display:none}
+
+    p {
+        margin: 0px;
+    }
+
+    .topheader {
+        position: relative;
+        width: 100%;
+        height: 58px;
+        background-color: #212731;
+
+        .th-darkmode-cont {
+            position: absolute;
+            top: 0;
+            left: 150px;
+            height: 100%;
+
+            .th-darkmode-switch {
+                margin-top: 16px;
+                float: left;
+            }
+
+            img {
+                height: 40%;
+                float: left;
+                margin: 18px 15px;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .th-links-cont {
+            position: absolute;
+            top: 0;
+            right: 150px;
+            height: 100%;
+
+            img {
+                height: 40%;
+                float: left;
+                margin: 18px 15px;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        height: 125px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+        transition: 0.2s all ease-out;
+
+        .h-icon-cont {
+            position: absolute;
+            top: 0;
+            left: 150px;
+            height: 100%;
+
+            img {
+                height: 60%;
+                float: left;
+                margin: 24% 15px;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .h-menu-cont {
+            position: absolute;
+            top: 0;
+            right: 150px;
+            height: 100%;
+
+            img {
+                height: 18px;
+                float: left;
+                margin-top: 55px;
+                margin-left: 20px;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .h-menu-vertline {
+                float: left;
+                height: 40px;
+                margin-top: 45px;
+                width: 1px;
+                background-color: grey;
+                opacity: 0.6;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            a {
+                float: left;
+                line-height: 40px;
+                margin: 0px 20px;
+                margin-top: 45px;
+                font-family: 'IBM Plex Mono';
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                color: black;
+
+                &:hover {
+                    color: #FF7A00;
+                }
+            }
+        }
+    }
+
+    .header-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .h-menu-cont {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .header-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .introduction {
+        position: relative;
+        padding: 125px 150px;
+
+        .introduction-box {
+            position: relative;
+            height: 600px;
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .introduction-box-img {
+                position: absolute;
+                right: 0%;
+                top: 40px;
+
+                img {
+                width: 400px;
+                height: 300px;
+                object-fit: contain;
+                }
+            }
+
+            .introduction-box-scrolldown {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p {
+                    line-height: 60px;
+                    margin-right: 20px;
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.5;
+                }
+
+                img {
+                    float: left;
+                }
+            }
+
+            .introduction-box-content {
+                position: absolute;
+                left: 0%;
+                top: 4em;
+                width: 60%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 48px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: rgba(0, 0, 0, 0.658);
+                    margin: 40px 0px;
+                }
+
+                h1:last-of-type {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin: 40px 0px;
+                }
+
+                
+  .button-orange {
+    position: relative;
+    background-color: #FF7A00;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    height: 50px;
+    width: 155px;
+    transition: 0.1s all ease-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #ce6c10;
+    }
+
+    .button-orange-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: inherit;
+
+        p {
+            color: white;
+            margin: 0px;
+            float: left;
+            margin-right: 10px;
+            line-height: 23px;
+            font-weight: 600;
+        }
+    }
+}
+            }
+        }
+    }
+
+    .introduction-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .introduction-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .introduction-box-scrolldown {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .introduction-box-content {
+                h1 {
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    color: white;
+                    opacity: 0.65;
+                    font-family: 'IBM Plex Mono';
+                }
+
+                
+            }
+        }
+    }
+
+    .introduction-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .sectiontwo {
+        position: relative;
+        padding: 125px 150px;
+
+        .sectiontwo-box {
+            position: relative;
+            height: 500px;
+
+            .box-index {
+                position: absolute;
+                top: 10%;
+                left: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: white;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .sectiontwo-box-content {
+                position: absolute;
+                top: 20%;
+                left: 0;
+                width: 50%;
+
+                h1 {
+                    font-size: 48px;
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    margin: 0px;
+                    color: white;
+                    line-height: 30px;
+                    padding-bottom: 20px;
+                    font-family: 'IBM Plex Mono';
+                }
+
+
+                .button-orange {
+                    position: relative;
+                    background-color: #FF7A00;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    height: 50px;
+                    width: 230px;
+                    transition: 0.1s all ease-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #ce6c10;
+                    }
+
+                    .button-orange-content {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        opacity:1;
+
+                        p {
+                            color: white;
+                            margin: 0px;
+                            float: left;
+                            margin-right: 10px;
+                            line-height: 23px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .sectiontwo-box-images {
+                position: absolute;
+                top: 10%;
+                right: 0;
+                width: 45%;
+                height: 80%;
+
+                img {
+                    width: 48%;
+                    margin: 1%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .sectiontwo-darkmode {
+        background-color: #1F252F;
+        transition: 0.2s all ease-out;
+
+        .sectiontwo-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            } 
+        }
+    }
+
+    .sectiontwo-darkmodeoff {
+        background-color: #1F252F;
+        transition: 0.2s all ease-out;
+    }
+
+    .sectionthree {
+        position: relative;
+        padding: 125px 150px;
+
+        .sectionthree-box {
+            position: relative;
+            height: 600px;
+
+            .box-index {
+                position: absolute;
+                top: 10%;
+                left: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .sectionthree-title {
+                position: absolute;
+                left: 0;
+                top: 15%;
+                width: 55%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 44px;
+                    line-height: 50px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+            }
+
+            .sectionthree-content {
+                position: absolute;
+                right: 0;
+                top: 15%;
+                width: 40%;
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 16px;
+                    font-weight: 00;
+                    line-height: 30px;
+                    margin: 10px 0px;
+                }
+            }
+
+
+            .sectionthree-items {
+                position: absolute;
+                left: 0;
+                bottom: -12%;
+                display: flex;
+                flex-wrap: nowrap;
+
+                .sectionthree-item {
+                        float: left;
+                        margin: auto;
+                        margin-bottom: 2em;
+                        margin-top: 0;
+                        flex: 1em;
+                        margin-right: 1em;
+
+                    img {
+                        width: 75px
+                    }
+
+                    h2 {
+                        font-family: 'Inter';
+                        font-weight: 500;
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-family: 'IBM Plex Mono';
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .sectionthree-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .sectionthree-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            } 
+
+            .sectionthree-title {
+                h1 {
+                    color: white;
+                }
+            }
+
+            .sectionthree-content {
+                p {
+                    color: rgba(255, 255, 255, 0.603);
+                }
+            }
+
+            .sectionthree-items {
+                .sectionthree-item {
+                    h2 {
+                        color: white;
+                    }
+
+                    p {
+                        color: rgba(255, 255, 255, 0.603);
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionthree-darkmodeoff {
+        background-color: #F3F5F9;
+        transition: 0.2s all ease-out;
+    }
+
+    .roadmap {
+        position: relative;
+        padding: 125px 0px;
+
+        .roadmap-box {
+            position: relative;
+            height: 1100px;
+
+            .roadmap-top {
+                width: 100%;
+                padding-bottom: 40px;
+
+                &:before {
+                    content : "";
+                    position: absolute;
+                    left    : 0;
+                    top  : 350px;
+                    height  : 1px;
+                    width   : 97%;  /* or 100px */
+                    border-bottom:2px solid rgba(128, 128, 128, 0.479);
+                  }
+
+                .roadmap-top-box {
+                    height: 290px;
+                    width: 100%;
+                    position: relative;
+
+                    .roadmap-top-box-title {
+                        h1 {
+                            margin: 0px;
+                            font-family: 'Inter';
+                            font-size: 54px;
+                            line-height: 30px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .box-index {
+                        position: absolute;
+                        bottom: 10%;
+                        left: 0;
+
+                        p {
+                            float: left;
+                            font-family: 'IBM Plex Mono';
+                            font-weight: 600;
+                            color: #171D27;
+                            opacity: 0.65;
+                        }
+
+                        span {
+                            float: left;
+                            color: #FF7A00;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .roadmap-top-box-right {
+                        position: absolute;
+                        top: 0;
+                        right: 40px;
+                        width: 26%;
+
+                        h1 {
+                            margin: 0px;
+                            font-family: 'Inter';
+                            font-size: 19px;
+                            line-height: 30px;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            margin-top: 20px;
+                            font-family: 'IBM Plex Mono';
+                            font-family: 14px;
+                            line-height: 30px;
+                            opacity: 0.8;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .roadmap-bottom {
+                width: 100%;
+                height: 590px;
+                padding-top: 90px;
+
+                .roadmap-bottom-box {
+                    height: 460px;
+                    width: 100%;
+                    position: relative;
+
+                    .roadmap-item {
+                        background-color: #eff2f6a8;
+                        height: 52%;
+                        width: 30%;
+                        margin: 1%;
+                        padding: 0px 40px;
+                        float: left;
+                        
+                        h2 {
+                            font-family: 'Inter';
+                            color: #171D27;
+                            font-weight: 800;
+
+                            span {
+                                color: #FF7A00;
+                            }
+                        }
+
+                        p {
+                            margin: 0px;
+                            font-family: 'IBM Plex Mono';
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 25px;
+
+                        }
+                    }
+                    .roadmap-item:last-of-type{
+                        width: 94%;
+                        height: min-content;
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .roadmap-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .roadmap-box {
+            .roadmap-top {
+                .roadmap-top-box {
+                    .roadmap-top-box-title {
+                        h1 {
+                            color: white;
+                        }
+                    }
+                    
+                    .box-index {
+                        p {
+                            color: rgba(255, 255, 255, 0.575);
+                        }
+                    }
+
+                    .roadmap-top-box-right {
+                        h1 {
+                            color: white;
+                        }
+
+                        p {
+                            color: rgba(255, 255, 255, 0.575);
+                        }
+                    }
+                }
+            }
+
+            .roadmap-bottom {
+                .roadmap-bottom-box {
+                    .roadmap-item {
+                        background-color: #1F252F;
+                        h2 {
+                            color: white;
+                        }
+
+                        p {
+                            color: rgba(255, 255, 255, 0.856);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .roadmap-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .theteam {
+        position: relative;
+        padding: 50px 0px 0px 0px;
+
+        .theteam-box {
+            position: relative;
+            height: 750px;
+            background-color: #F3F5F9;
+
+            .theteam-title {
+                position: absolute;
+                top: calc(20% + 20px);
+                left: 10%;
+
+                h1 {
+                    font-family: 'Inter';
+                    font-size: 46px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            .box-index {
+                position: absolute;
+                top: 20%;
+                left: 10%;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .button-orange {
+                position: absolute;
+                top: calc(30% + 40px);
+                left: 10%;
+                background-color: #FF7A00;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                height: 50px;
+                width: 160px;
+                transition: 0.1s all ease-out;
+            
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ce6c10;
+                }
+            
+                .button-orange-content {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+            
+                    p {
+                        color: white;
+                        margin: 0px;
+                        float: left;
+                        margin-right: 10px;
+                        line-height: 23px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+
+        .theteam-sel-title {
+            font-family: 'Inter';
+            position: absolute;
+            top: 35%;
+            left: 35%;
+        }
+
+        .theteam-sel-desc {
+            font-family: 'IBM Plex Mono';
+            position: absolute;
+            top: calc(40% + 40px);
+            left: 35%;
+            width: 30%;
+            line-height: 30px;
+        }
+
+        .theteam-arrows {
+            position: absolute;
+            right: 150px;
+            top: 55%;
+
+            img {
+                width: 30px;
+                float: left;
+                margin: 0px 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .theteam-bar {
+            position: absolute;
+            right: 160px;
+            top: 65%;
+            width: 55%;
+            height: 6px;
+            background-color: #171d272d;
+            border-radius: 3px;
+
+            .theteam-bar-progress {
+                transition: 0.4s ease-out;
+                height: 6px;
+                background-color: #FF7A00;
+            }
+        }
+
+        .theteam-items {
+            z-index: 999;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 300px;
+
+            .theteam-item {
+                transition: 0.2s all ease-out;
+                float: right;
+                margin: 0px 1%;
+            }
+
+            .theteam-item-big {
+                width: 22%;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .theteam-item-normal {
+                width: 16%;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .theteam-darkmode {
+        transition: 0.2s all ease-out;
+        background-color: #171D27;
+
+        .theteam-box {
+            background-color: #1F252F;
+
+            .theteam-title {
+                h1 {
+                    color: white;
+                }
+            }
+            
+            .box-index {
+                p {
+                    color: rgba(255, 255, 255, 0.575);
+                }
+            }
+
+            .theteam-sel-title {
+                color: white;
+            }
+
+            .theteam-sel-desc {
+                color: rgba(255, 255, 255, 0.623);
+            }
+        }
+    }
+
+    .theteam-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        padding: 100px 150px;
+        background-color: #171D27;
+        div[class^="mobile"] {
+          display:none;
+        }
+
+        .footer-box {
+            position: relative;
+            height: 500px;
+        }
+
+        .footer-horline {
+            height: 2px;
+            background-color: white;
+            opacity: 0.4;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 70%;
+        }
+
+        .footer-horlineb {
+            height: 2px;
+            background-color: white;
+            opacity: 0.4;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: -2px;
+        }
+
+        .footer-verline {
+            width: 2px;
+            background-color: white;
+            opacity: 0.4;
+            position: absolute;
+            height: 70%;
+            left: 40%;
+            top: 0%;
+        }
+
+        .footer-copyright {
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+
+            p {
+                font-family: 'IBM Plex Mono';
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.658);
+            }
+        }
+
+        .footer-designer {
+            position: absolute;
+            right: 0;
+            bottom: 10%;
+
+            p {
+                font-family: 'IBM Plex Mono';
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.658);
+            }
+        }
+
+        .footer-logo {
+            position: absolute;
+            left: 0;
+            top: 0%;
+
+            img {
+                width: 5%;
+            }
+        }
+
+        .footer-title {
+            position: absolute;
+            left: 0;
+            top: 10%;
+
+            h2 {
+                color: white;
+                font-size: 18px;
+                font-family: 'Inter';
+            }
+        }
+
+        .footer-text {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            width: 30%;
+
+            p {
+                font-family: 'IBM Plex Mono';
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.658);
+                line-height: 30px;
+            }
+        }
+
+        .footer-menu-navigation {
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            width: 20%;
+
+            h2 {
+                margin: 0px;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            a {
+                display: block;
+                margin: 30px 0px;
+                color: white;
+                font-family: 'IBM Plex Mono';
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #FF7A00;
+                }
+            }
+        }
+
+        .footer-menu-socialmedia {
+            position: absolute;
+            left: 65%;
+            top: 0%;
+            width: 20%;
+
+            .footer-menu-withimg {
+                width: 100%;
+                margin: 30px 0px;
+
+                img {
+                    float: left;
+                    margin-right: 4px;
+                }
+                a {
+                    float: left;
+                    margin: 0px 0px;
+                    color: white;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    font-size: 14px;
+                    text-transform: uppercase;
+    
+                    &:hover {
+                        color: #FF7A00;
+                    }
+                }
+            }
+
+            h2 {
+                margin: 0px;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            a {
+                display: block;
+                margin: 30px 0px;
+                color: white;
+                font-family: 'IBM Plex Mono';
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #FF7A00;
+                }
+            }
+        }
+
+        .footer-menu-legal {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            width: 20%;
+
+            h2 {
+                margin: 0px;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            a {
+                display: block;
+                margin: 30px 0px;
+                color: white;
+                font-family: 'IBM Plex Mono';
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #FF7A00;
+                }
+            }
+        }
+    }
+
+    .factoryintro {
+        position: relative;
+        padding: 125px 150px;
+
+        .factoryintro-box {
+            position: relative;
+            height: 300px;
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .factoryintro-box-scrolldown {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p {
+                    line-height: 60px;
+                    margin-right: 20px;
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.5;
+                }
+
+                img {
+                    float: left;
+                }
+            }
+
+            .factoryintro-box-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 40%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 72px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: rgba(0, 0, 0, 0.719);
+                    margin: 40px 0px;
+                }
+            }
+        }
+    }
+
+    .factoryintro-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .factoryintro-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .factoryintro-box-scrolldown {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .factoryintro-box-content {
+                h1 {
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    color: white;
+                    opacity: 0.65;
+                    font-family: 'IBM Plex Mono';
+                }
+
+                
+            }
+
+        }
+    }
+
+    .factoryintro-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .factorysectiontwo {
+        position: relative;
+        padding: 125px 150px;
+
+        .factorysectiontwo-box {
+            position: relative;
+            height: 200px;
+
+            .factorysectiontwo-counter {
+                position: absolute;
+                bottom: -15%;
+                left: calc(48% - 80px);
+                width: 140px;
+                text-align: center;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: white;
+                    opacity: 0.65;
+            }
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: white;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+        
+
+            .factorysectiontwo-box-content {
+                position: absolute;
+                left: 0;
+                top: 8%;
+                width: 40%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 56px;
+                    font-weight: 600;
+                    color: white;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 20px 0px;
+                    color: white;
+                }
+            }
+
+            .factorysectiontwo-box-item {
+                position: absolute;
+                top: 50%;
+                width: 15%;
+
+                h2 {
+                    font-family: 'IBM Plex Mono';
+                    color: white;
+                    opacity: 0.65;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: 0.5s all ease-out;
+
+                    span {
+                        color: #FF7A00;
+                        font-weight: 700;
+                        opacity: 1;
+                    }
+                }
+
+                h1 {
+                    font-family: 'Inter';
+                    color: white;
+                    opacity: 1;
+                    font-size: 20px;
+                    transition: 0.5s all ease-out;
+
+                    span {
+                        color: #FF7A00;
+
+                    }
+                }
+
+                
+
+                img {
+                    width: 100%;
+                    height: 150px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .button-orange {
+                position: absolute;
+                bottom: -10%;
+                left: calc(50% - 100px);
+                background-color: #FF7A00;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                height: 50px;
+                width: 140px;
+                transition: 0.1s all ease-out;
+            
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ce6c10;
+                }
+            
+                .button-orange-content {
+                    margin-left: 26px;
+                    margin-right: 16px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+            
+                    p {
+                        text-align: center;
+                        color: white;
+                        margin: 0px;
+                        float: left;
+                        margin-right: 10px;
+                        line-height: 23px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .factorysectiontwo-box-item-sel {
+                z-index: 999;
+                border: 3px solid #FF7A00;
+                height: 156px;
+
+                
+            }
+
+            .factorysectiontwo-box-item-nosel {
+                h2 {
+                    opacity: 0;
+                }
+
+                h1 {
+                    opacity: 0;
+                }
+            }
+
+            .factorysectiontwo-box-item-a {
+                
+            }
+
+            .factorysectiontwo-box-item-b {
+                left: 20%;
+            }
+
+            .factorysectiontwo-box-item-c {
+                left: 40%;
+            }
+
+            .factorysectiontwo-box-item-d {
+                left: 60%;
+            }
+
+            .factorysectiontwo-box-item-e {
+                left: 80%;
+            }
+        }
+    }
+
+    .factorysectiontwo-darkmode {
+        background-color: #1F252F;
+        transition: 0.2s all ease-out;
+
+    }
+
+    .factorysectiontwo-darkmodeoff {
+        background-color: #1F252F;
+        transition: 0.2s all ease-out;
+    }
+
+    .factorysectionthree {
+        position: relative;
+        padding: 125px 150px;
+
+        .factorysectionthree-box {
+            position: relative;
+            height: 400px;
+            // background-color: rgba(255, 0, 0, 0.589);
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                p {
+                    margin: 0;
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: black;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .fst-title {
+                position: absolute;
+                top: 0;
+                width: 60%;
+                right: 0;
+
+                h2 {
+                    margin: 0;
+                    font-family: 'Inter';
+                    font-size: 18px;
+                    color: black;
+                    line-height: 30px;
+                    font-weight: 400;
+                    span {
+                        color: #FF7A00;
+                    }
+                }
+
+                p {
+                    margin: 20px 0px;
+                    font-family: 'IBM Plex Mono';
+                    font-size: 16px;
+                    color: black;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+            }
+
+            .button-orange {
+                position: absolute;
+                bottom: -10%;
+                left: 40%;
+                background-color: #FF7A00;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                height: 50px;
+                width: 160px;
+                transition: 0.1s all ease-out;
+            
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ce6c10;
+                }
+            
+                .button-orange-content {
+                    margin-left: 26px;
+                    margin-right: 16px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+            
+                    p {
+                        text-align: center;
+                        color: white;
+                        margin: 0px;
+                        float: left;
+                        margin-right: 10px;
+                        line-height: 23px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .factorysectionthree-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .factorysectionthree-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+            .fst-title {
+                h2, p {
+                    color: white;
+                    span {
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .factorysectionthree-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .museumintro {
+        position: relative;
+        padding: 125px 150px;
+
+        .museumintro-box {
+            position: relative;
+            height: 1200px;
+
+            .box-index {
+                position: absolute;
+                top: -30px;
+                right: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .museumintro-hline {
+                position: absolute;
+                width: 100%;
+                height: 1.5px;
+                background-color: grey;
+                opacity: 0.3;
+                top: 120px;
+                left: 0;
+            }
+
+            .museumintro-category-item {
+                    position: relative;
+                width: 3em;
+                top: 160px;
+                display: inline-flex;
+                margin-left: 5em;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    transition: 0.2s all ease-out;
+                    float: left;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 15px;
+                    margin-left: 10px;
+                    float: left;
+                }
+            }
+
+            .museumintro-category-item-a {
+
+            }
+            .museumintro-category-item-b {
+                left: 25%;
+            }
+            .museumintro-category-item-c {
+                left: 50%;
+            }
+            .museumintro-category-item-d {
+                left: 75%;
+            }
+
+            .museumintro-category-item-sel {
+                img {
+                    opacity: 1;
+                }
+
+                p {
+                    opacity: 1;
+                }
+            }
+
+            .museumintro-category-item-nosel {
+                img {
+                    opacity: 0;
+                }
+
+                p {
+                    opacity: 0.3;
+                }
+            }
+
+            .museumintro-box-content {
+                position: absolute;
+                left: 0;
+                top: -50px;
+                width: 30%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 56px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 40px 0px;
+                }
+            }
+
+            .museumintro-items {
+                position: absolute;
+                top: 240px;
+                width: 100%;
+                height: calc(100% - 280px);
+
+                .museumintro-item {
+                    width: 18%;
+                    margin: 1%;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .museumintro-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .museumintro-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .museumintro-box-content {
+                h1 {
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    color: white;
+                    opacity: 0.65;
+                    font-family: 'IBM Plex Mono';
+                }
+
+                
+            }
+
+            .museumintro-category-item {
+                p {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .museumintro-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .vycintro {
+        position: relative;
+        padding: 125px 150px;
+
+        .vycintro-box {
+            position: relative;
+            height: 800px;
+
+            .vycintro-searchbox {
+                position: absolute;
+                left: calc(27% + 30px);
+                top: 160px;
+                width: 40%;
+
+                p {
+                    text-align: center;
+                    font-family: 'IBM Plex Mono';
+                    color: #171D27;
+                    opacity: 0.65;
+                    font-weight: 600;
+                    margin: 10px 0px;
+                }
+
+                input {
+                    -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        border-radius: 10px;
+                        border: 1px solid grey;
+                        color: grey;
+                        width: 70%;
+                        height: 30px;
+                        padding: 20px 10px;
+                        opacity: 0.9;
+                        font-family: 'Inter';
+                        margin: 0 auto;
+                        display: block;
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid grey;
+                            color: black;
+                        }
+                }
+            }
+
+            .box-index {
+                position: absolute;
+                top: -2em;
+                width: -webkit-fill-available;
+                text-align:center;
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .vycintro-hline {
+                position: absolute;
+                width: 100%;
+                height: 1.5px;
+                background-color: grey;
+                opacity: 0.3;
+                top: 320px;
+                left: 0;
+            }
+
+            .vycintro-category-item {
+                position: absolute;
+                top: 380px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    transition: 0.2s all ease-out;
+                    float: left;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 15px;
+                    margin-left: 10px;
+                    float: left;
+                }
+            }
+
+            .vycintro-category-item-a {
+
+            }
+            .vycintro-category-item-b {
+                left: 25%;
+            }
+            .vycintro-category-item-c {
+                left: 50%;
+            }
+            .vycintro-category-item-d {
+                left: 75%;
+            }
+
+            .vycintro-category-item-sel {
+                img {
+                    opacity: 1;
+                }
+
+                p {
+                    opacity: 1;
+                }
+            }
+
+            .vycintro-category-item-nosel {
+                img {
+                    opacity: 0;
+                }
+
+                p {
+                    opacity: 0.3;
+                }
+            }
+
+            .vycintro-box-content {
+                position: absolute;
+                right: 20%;
+                top: 40px;
+                width: auto;
+                text-align: center;
+                display: contents;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 56px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 40px 0px;
+                }
+            }
+
+            .vycintro-items {
+                position: absolute;
+                top: 440px;
+                width: 100%;
+                height: calc(100% - 280px);
+
+                .vycintro-item {
+                    width: 20%;
+                    margin: 2%;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .vycintro-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .vycintro-box {
+            .vycintro-searchbox {
+                p {
+                    color: white;
+                }
+            }
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .vycintro-box-content {
+                h1 {
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    color: white;
+                    opacity: 0.65;
+                    font-family: 'IBM Plex Mono';
+                }
+
+                
+            }
+
+            .vycintro-category-item {
+                p {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .vycintro-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+
+    .markettranshis {
+        position: relative;
+        padding: 125px 150px;
+        background-color: #1F252F;
+
+        .markettranshis-box {
+            position: relative;
+            height: 800px;
+
+            .markettranshis-searchbox {
+                position: absolute;
+                right: 0%;
+                top: 0px;
+                width: 40%;
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    color: white;
+                    opacity: 0.65;
+                    font-weight: 600;
+                    margin: 10px 0px;
+                }
+
+                input {
+                    -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        border-radius: 10px;
+                        border: 1px solid grey;
+                        color: grey;
+                        background-color: #1F252F;
+                        caret-color: white;
+                        width: 70%;
+                        height: 30px;
+                        padding: 20px 10px;
+                        opacity: 0.9;
+                        font-family: 'Inter';
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid grey;
+                            color: white;
+                        }
+                }
+            }
+
+            .markettranshis-list {
+                position: absolute;
+                top: 120px;
+                width: 100%;
+
+                table {
+                    display: table;
+                    width: 100%;
+                    font-family: 'IBM Plex Mono';
+                    color: white;
+                    font-size: 16px;
+                    line-height: 40px;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    thead {
+                        border: 1px solid rgba(255, 255, 255, 0.596);
+
+                        tr {
+                            margin: 0px;
+                            padding: 0px;
+
+                            th {
+                                text-align: left;
+                                width: 20%;
+                                padding: 0px 20px;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                padding: 0px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .markettranshis-title {
+                position: absolute;
+                top: 0%;
+                font-family: 'Inter';
+                    font-size: 28px;
+                    color: white;
+                    font-weight: 600;
+            }
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: white;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .marketintro {
+        position: relative;
+        padding: 125px 150px;
+
+        .marketintro-box {
+            position: relative;
+            height: 800px;
+
+            .box-index {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                p {
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.65;
+                }
+
+                span {
+                    float: left;
+                    color: #FF7A00;
+                    margin-right: 10px;
+                }
+            }
+
+            .marketintro-box-scrolldown {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p {
+                    line-height: 60px;
+                    margin-left: 20px;
+                    float: left;
+                    font-family: 'IBM Plex Mono';
+                    font-weight: 600;
+                    color: #171D27;
+                    opacity: 0.5;
+                }
+
+                img {
+                    float: left;
+                }
+            }
+
+            .marketintro-box-image {
+                width: 55%;
+                height: 360px;
+                position: absolute;
+                right: 60px;
+                top: -50px;
+                
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .marketintro-box-accessories-item {
+                position: inherit;
+                top: 500px;
+                width: fit-content;
+                float: left;
+                margin-right: 2em;
+
+
+                h2 {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    margin: 10px 0px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 20px 0px;
+
+                    span {
+                        color: #FF7A00;
+                    }
+                }
+            }
+
+            .marketintro-box-accessories-item-a {
+                left: 42%;
+            }
+
+            .marketintro-box-accessories-item-b {
+                left: 42%;
+            }
+
+            .marketintro-box-accessories {
+                position: absolute;
+                top: 450px;
+                left: 42%;
+
+                h2 {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 25px;
+                    margin: 10px 0px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    margin: 20px 0px;
+
+                    span {
+                        color: #FF7A00;
+                    }
+                }
+            }
+
+            .marketintro-box-marketstatus {
+                position: absolute;
+                top: 340px;
+                left: 42%;
+
+                h2 {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 25px;
+                    margin: 10px 0px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 20px 0px;
+
+                    span {
+                        color: #FF7A00;
+                    }
+                }
+            }
+
+            .marketintro-box-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 35%;
+
+                h1 {
+                    margin: 0px;
+                    font-family: 'Inter';
+                    font-size: 56px;
+                    font-weight: 600;
+
+                    span {
+                        color: #171D27;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    font-family: 'IBM Plex Mono';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 10px 0px;
+                }
+
+                h2 {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    margin: 10px 0px;
+
+                    span {
+                        color: #FF7A00;
+                    }
+                }
+            }
+        }
+    }
+
+    .marketintro-darkmode {
+        background-color: #171D27;
+        transition: 0.2s all ease-out;
+
+        .marketintro-box {
+            .box-index {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .marketintro-box-accessories, .marketintro-box-marketstatus, .marketintro-box-content, .marketintro-box-accessories-item {
+                h2, p { color: white; }
+            }
+
+            .marketintro-box-scrolldown {
+                p {
+                    color: white;
+                    opacity: 0.65;
+                }
+            }
+
+            .marketintro-box-content {
+                h1 {
+                    color: white;
+
+                    span {
+                        color: white;
+                        opacity: 0.65;
+                    }
+                }
+
+                p {
+                    color: white;
+                    opacity: 0.65;
+                    font-family: 'IBM Plex Mono';
+                }
+
+                
+            }
+
+        }
+    }
+
+    .marketintro-darkmodeoff {
+        background-color: white;
+        transition: 0.2s all ease-out;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media only screen and (max-width: 768px) {
+  
+    .introduction{
+    padding: 2em !important;
+
+        .box-index{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+
+            p{
+                width: 100%;
+                margin-bottom: 2em;
+                span{
+                    float: initial !important;
+                }
+            }
+        }
+
+        .introduction-box{
+            height: 900px !important;
+        }
+
+        .introduction-box-scrolldown{
+            position:relative!important;
+            width: fit-content!important;
+            margin: auto!important;
+            margin-top: 4.5em!important;
+        }
+
+        .introduction-box-content{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+
+        .introduction-box-img{
+            position:relative!important;
+
+            img{
+                width: auto!important;
+                margin: auto!important;
+                display: block!important;
+            }
+        }
+    }
+
+    .sectionthree{
+    padding: 2em !important;
+
+
+        .box-index{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+
+            p{
+                width: 100%;
+                margin-bottom: 2em;
+                span{
+                    float: initial !important;
+                }
+            }
+        }
+        .sectionthree-box{
+            height: 1500px !important;
+        }
+        .sectionthree-content{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .sectionthree-title{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .sectionthree-items{
+            position:relative!important;
+            flex-wrap: wrap!important;
+            .sectionthree-item{
+                width:9em!important;
+
+            }
+        }
+    }
+
+    .sectiontwo{
+    padding: 2em !important;
+    .box-index{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+
+            p{
+                width: 100%;
+                margin-bottom: 2em;
+                span{
+                    float: initial !important;
+                }
+            }
+        }
+        .sectiontwo-box{
+            height: 1000px !important;
+        }
+        .sectiontwo-box-content{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .sectiontwo-box-images{
+            position:relative !important;
+            width: auto !important;
+        }
+    }
+
+    .roadmap{
+    padding: 2em !important;
+    .box-index{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+
+                p{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    span{
+                        float: initial !important;
+                    }
+                }
+            }
+        .roadmap-top-box-title{
+            position:relative !important;
+            text-align:center;
+        }
+        .roadmap-top-box-right{
+            position:relative !important;
+            text-align:center;
+            width:auto!important;
+            right:0px!important;
+            margin-top:2.5em;
+        }
+        .roadmap-item{
+        width:auto !important
+        }
+        .roadmap-top:before{
+        top: 400px !important;
+        }
+    }
+
+    .theteam{
+    display: flex !important;
+    padding: 2em !important;
+        .theteam-items{display:none}
+        .theteam-arrows{display:none}
+        .theteam-bar{display:none}
+        .theteam-box{
+            height: 750px !important;
+            padding:1em;
+            .box-index{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+
+                p{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    span{
+                        float: initial !important;
+                    }
+                }
+            }
+            .theteam-title{
+            position:relative!important;
+                text-align: center;
+                display: contents;
+                h1{
+
+                font-size: 35px !important;
+                }
+            }
+            .theteam-sel-title{
+            position:relative!important;
+                text-align: center;
+                display: contents;
+            }
+            .theteam-sel-desc{
+            position:relative!important;
+                text-align: start;
+                display: contents;
+            }
+            .button-orange{
+                margin:auto!important;
+                position:initial !important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .theteam-box-content{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .theteam-box-images{
+            position:relative !important;
+            width: auto !important;
+        }
+    }
+
+    .factoryintro{
+    display: flex !important;
+    padding: 2em !important;
+        .factoryintro-box{
+            height: 500px !important;
+            padding:1em;
+            .box-index{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+
+                p{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    span{
+                        float: initial !important;
+                    }
+                }
+            }
+            .theteam-title{
+            position:relative!important;
+                text-align: center;
+                display: contents;
+                h1{
+
+                font-size: 35px !important;
+                }
+            }
+            .theteam-sel-title{
+            position:relative!important;
+                text-align: center;
+                display: contents;
+            }
+            .theteam-sel-desc{
+            position:relative!important;
+                text-align: center;
+                display: contents;
+            }
+            .button-orange{
+                margin:auto!important;
+                position:initial !important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+        }
+        .factoryintro-box-content{
+            position:relative!important;
+            text-align: center;
+            display: contents;
+            .button-orange{
+                margin:auto!important;
+                .button-orange-content{
+                    width: max-content!important;
+                }
+            }
+            h1{
+                font-size:45px !important;
+            }
+        }
+        .factoryintro-box-scrolldown{
+            position:relative!important;
+            width: fit-content!important;
+            margin: auto!important;
+            margin-top: 4.5em!important;
+        }
+    }
+
+    .factorysectiontwo{
+        display: flex !important;
+        padding: 2em !important;
+            .factorysectiontwo-box{
+                height: 500px !important;
+                padding:1em;
+                .box-index{
+                    position:relative!important;
+                    text-align: center;
+                    display: contents;
+
+                    p{
+                        width: 100%;
+                        margin-bottom: 2em;
+                        span{
+                            float: initial !important;
+                        }
+                    }
+                }
+            }
+            .factorysectiontwo-box-content{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+                .button-orange{
+                    margin:auto!important;
+                    .button-orange-content{
+                        width: max-content!important;
+                    }
+                }
+                h1{
+                    font-size:45px !important;
+                }
+            }
+            .factorysectiontwo-box-scrolldown{
+                position:relative!important;
+                width: fit-content!important;
+                margin: auto!important;
+                margin-top: 4.5em!important;
+            }
+    }
+
+    .factorysectionthree{
+        display: flex !important;
+        padding: 2em !important;
+            .factorysectionthree-box{
+                height: 500px !important;
+                padding:1em;
+                width: 100% !important;
+                .box-index{
+                    position:relative!important;
+                    text-align: center;
+                    display: contents;
+
+                    p{
+                        width: 100%;
+                        margin-bottom: 2em;
+                        span{
+                            float: initial !important;
+                        }
+                    }
+                }
+
+                .fst-title{
+                    text-align: center;
+                    margin-top: 3em;
+                    width:auto!important;
+                }
+            }
+            .factorysectionthree-box-content{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+                .button-orange{
+                    margin:auto!important;
+                    .button-orange-content{
+                        width: max-content!important;
+                    }
+                }
+                h1{
+                    font-size:45px !important;
+                }
+            }
+            .factorysectionthree-box-scrolldown{
+                position:relative!important;
+                width: fit-content!important;
+                margin: auto!important;
+                margin-top: 4.5em!important;
+            }
+    }
+
+    .museumintro{
+        display: flex !important;
+        padding: 2em !important;
+            .museumintro-box{
+                height: auto !important;
+                padding:1em;
+                width: 100% !important;
+                margin-bottom:4em;
+                .box-index{
+                    position:relative!important;
+                    text-align: center;
+                    display: contents;
+
+                    p{
+                        width: 100%;
+                        margin-bottom: 2em;
+                        span{
+                            float: initial !important;
+                        }
+                    }
+                }
+
+                .fst-title{
+                    text-align: center;
+                    margin-top: 3em;
+                    width:auto!important;
+                }
+            }
+
+            .museumintro-box-content{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+                .button-orange{
+                    margin:auto!important;
+                    .button-orange-content{
+                        width: max-content!important;
+                    }
+                }
+                h1{
+                    font-size:42px !important;
+                }
+            }
+
+            .museumintro-box-scrolldown{
+                position:relative!important;
+                width: fit-content!important;
+                margin: auto!important;
+                margin-top: 4.5em!important;
+            }
+
+            .museumintro-category-item{
+            display: flex !important;
+            top:0 !important
+            }
+
+            .museumintro-category-item:first-of-type{
+                margin-top: 5em!important;
+            }
+
+
+            .museumintro-category-item-a{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 4em!important;
+            
+            }
+            .museumintro-category-item-b{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+            .museumintro-category-item-c{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+            .museumintro-category-item-d{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+
+            .museumintro-items{
+                position:relative!important;
+                text-align: center;
+                display: block;
+                top: 4em !important;
+            }
+
+            .museumintro-item{
+                    width: 48% !important;
+            }
+
+            .museumintro-hline{
+                top:145px!important;
+            }
+
+    }
+
+    .vycintro{
+        display: flex !important;
+        padding: 2em !important;
+            .vycintro-box{
+                height: 1800px !important;
+                padding:1em;
+                width: 100% !important;
+                margin-bottom:4em;
+                .box-index{
+                    position:relative!important;
+                    text-align: center;
+                    display: contents;
+
+                    p{
+                        width: 100%;
+                        margin-bottom: 2em;
+                        span{
+                            float: initial !important;
+                        }
+                    }
+                    div{
+                    width:inherit !important
+                    }
+                }
+            }
+
+            .vycintro-searchbox{
+                position:relative!important;
+                text-align: center;
+                display: contents;
+                .button-orange{
+                    margin:auto!important;
+                    .button-orange-content{
+                        width: max-content!important;
+                    }
+                }
+                h1{
+                    font-size:42px !important;
+                }
+            }
+
+            .vycintro-box-scrolldown{
+                position:relative!important;
+                width: fit-content!important;
+                margin: auto!important;
+                margin-top: 4.5em!important;
+            }
+
+
+            .vycintro-category-item:first-of-type{
+                margin-top: 5em!important;
+            }
+
+
+            .vycintro-category-item-a{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 4em!important;
+            
+            }
+            .vycintro-category-item-b{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+            .vycintro-category-item-c{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+            .vycintro-category-item-d{
+                position:initial !important;
+                display: inline-block!important;
+                margin-top: 1em!important;
+            
+            }
+
+            .vycintro-items{
+                position:relative!important;
+                text-align: center;
+                display: block;
+                top: 4em !important;
+            }
+
+            .vycintro-item{
+                width: 100% !important;
+            }
+
+            .vycintro-hline{
+                top:315px!important;
+            }
+
+    }
+
+    .footer{
+        padding:4em 3em!important;
+            div[class^="footer"] {
+              display:none !important;
+            }
+            div[class^="mobile"] {
+              display:block !important;
+            }
+    }
+
+    .mobile-footer-logo{
+            left: 0;
+            top: 0%;
+
+            img {
+                width: 50%;
+            }
+    }
+
+    .mobile-footer-content{
+            font-family: 'Inter';
+            font-weight:600;
+            font-size:1.2em;
+            color:#FFFFFF;
+            margin-top:2em;
+            padding-bottom:2em;
+            border-bottom: 2px solid #FFFFFF40;
+            span{
+                float:right;
+            }
+                .grid2x2 {
+                  min-height: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  margin-top:1em;
+                }
+                .grid2x2 > div {
+                  display: flex; 
+                  flex-basis: calc(50% - 40px);  
+                  justify-content: flex-start;
+                  flex-direction: column;
+                }
+                .grid2x2 > div > div {
+                  display: flex;
+                  justify-content: flex-start;
+                  flex-direction: row;
+                }
+
+                .box { 
+                margin: 20px; }
+
+                .social_img{
+                    margin-right:1em;
+                    width:1em
+                }
+    }
+
+    .mobile-divider{
+        height: 2px;
+        width: 129%;
+        margin-left: -2.7em;
+        background:#FFFFFF40;
+        margin-top:4em
+    }
+
+    .mobile-legal{
+        font-family: 'IBM Plex Mono';
+        font-weight:600;
+        font-size:0.8em;
+        color:#FFFFFF70;
+        margin-top:2em;
+    }
+
+    .header{
+        display:none !important;
+    }
+
+    .th-links-cont{
+        display:none !important;
+    }
+
+    .th-darkmode-cont{
+        left: auto !important;
+        right: 0 !important;
+    }
+
+    .mobile-hamb{
+        display:block !important;
+        padding:1.2em;
+        img{
+
+            width:1.5em;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .mobile-team-img{
+        display:block !important;
+        margin-top:2em;
+        img{
+            width:100%
+        }
+    }
+
+    .mobilemenuopened {
+        z-index: 9999;
+        width: 100%;
+        background-color: #212731;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        padding: 20px 10px;
+        p{
+            Font-Family:'IBM Plex Mono';
+            color:white;
+            padding:1em 2em
+        }
+    }
+
+    .unlocks{
+    text-align:center;
+    display:block
+    }
+
+        .marketintro{
+        display: flex !important;
+        padding: 2em !important;
+            .marketintro-box{
+                height: auto !important;
+                padding:1em;
+                width: 100% !important;
+                margin-bottom:4em;
+                .box-index{
+                    position:relative!important;
+                    text-align: center;
+                    display: contents;
+
+                    p{
+                        width: 100%;
+                        margin-bottom: 2em;
+                        span{
+                            float: initial !important;
+                        }
+                    }
+                    div{
+                    width:inherit !important
+                    }
+                }
+            }
+
+            .marketintro-box-scrolldown{
+                position:relative!important;
+                width: fit-content!important;
+                margin: auto!important;
+                margin-top: 4.5em!important;
+            }
+
+            .marketintro-box-content{
+                width:100%!important;
+                position:relative!important;
+            }
+
+            .marketintro-box-marketstatus{
+                width:100%!important;
+                position:relative!important;
+                top:0!important;
+                left:0!important;
+
+            }
+
+            .marketintro-box-accessories{
+                position:initial!important;
+            }
+            .marketintro-box-accessories-item{
+                position:initial!important;
+            }
+            .marketintro-box-content h1 {font-size: 47px !important;}
+            .marketintro-box-image{
+                width:103.1vw !important;
+                position: inherit !important;
+                height:66vw !important}
+            .attBox{
+                margin-left: 0% !important;
+            }
+            .imageSingle{
+                margin: auto;
+                width: 80vw !important;
+                display: block;
+                margin-left: 14vw;
+            }
+
+    }
+
+    .csoon{
+    display:none
+    }
+
+
+    .main_wrapper h1{
+        font-size:inherit;
+        text-align:center
+    }
+
+    .main_wrapper p{
+        text-align:center;
+        width:100%;
+        margin-bottom:4em
+    }
+
+    .main{
+    height:auto;
+    display:block;
+        img{
+            width:100%
+        }
+    }
+
+    .main_mint{
+        padding:2em
+    }
+
+    .roadmap_header{
+        margin-top:0em
+    }
+
+
+    .team_wrapper{
+        display:block
+
+    }
+
+    .roadmap_wrapper_item{
+    height:auto
+    }
+}
