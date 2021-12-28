@@ -59,7 +59,7 @@ export default function Home() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
-      return <div hidden><div >
+      return <div><div>
             <p className={styles.main_mint_s} onClick={() => { 
               setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
 

@@ -1,0 +1,3 @@
+language = "node.js"
+run = "npm run-script start"
+
