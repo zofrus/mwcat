@@ -183,6 +183,10 @@ export default function Home() {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+  const clickHandle = () => {
+    document.location.href = 'https://moonwalker.us20.list-manage.com/subscribe/post?u=a558426c091616f6d1b9c78a1&amp;id=d2ebdeb98f';
+  }
+  
   const galleryCount = async (thisHI) => {
     const _ = setTimeout(() => {
     
@@ -209,6 +213,7 @@ export default function Home() {
         <Fade delay={600}>
           <img src='/222 (1).svg'/>
         </Fade>
+        <button className={styles.subscribe_button} onClick={clickHandle}>Newsletter</button>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>

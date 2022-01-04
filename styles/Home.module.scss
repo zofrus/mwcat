@@ -157,11 +157,11 @@ margin-right: 0;
     font-weight:700
 }
 
-.connect_button{
+.connect_button, .subscribe_button {
+    right: 5%;
     padding: 1em 3em;
     position:absolute;
     margin-top: 10px;
-    right: 5%;
     border-radius: 5px;
     border: 1px solid #00000040;
     font-weight: 700;
@@ -172,15 +172,18 @@ margin-right: 0;
     font-family:'Mont Heavy';
         box-shadow: 0 5px 38px rgba(0,0,0,0.30);
         transition: 0.5s all ease-out;
-
 }
 
-.connect_button:hover{
-        background: black;
-        cursor: pointer;
-        color: white;
-        box-shadow: 0 5px 38px rgba(0,0,0,0.70);
-    };
+.connect_button:hover, .subscribe_button:hover {
+    background: black;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 5px 38px rgba(0,0,0,0.70);
+}
+
+.subscribe_button{
+    left: 5%;
+}
 
 .main_mint{
     background:white;
