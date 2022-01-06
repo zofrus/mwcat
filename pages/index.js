@@ -218,8 +218,16 @@ export default function Home() {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
+      
         <div hidden className={styles.csoon}>COMING SOON</div>
         <img className={styles.himg} src='/Rectangle.png'/>
+       
+        <div className={styles.main_mint}>
+          <h1>MINT GENERATION ZERO</h1>
+          <p className={styles.main_mint_p}>Limited supply remaining! Only 1500 GEN-0 Moonwalker NFTs available, each mint costing 0.06Ξ</p>
+          
+            <Countdown date={1634645247000} renderer={renderer}/>
+        </div>
         <div className={styles.main}>
           <div className={styles.main_wrapper}>
             <h1>What is MoonwalkerFM</h1>
@@ -241,12 +249,6 @@ export default function Home() {
           <img src={`/s${4}.png`}/>
           <img src={`/s${5}.png`}/>
           <img src={`/s${6}.png`}/>
-        </div>
-        <div className={styles.main_mint}>
-          <h1>MINT GENERATION ZERO</h1>
-          <p className={styles.main_mint_p}>Limited supply remaining! Only 1500 GEN-0 Moonwalker NFTs available, each mint costing 0.06Ξ</p>
-          
-            <Countdown date={1634645247000} renderer={renderer}/>
         </div>
         <img className={styles.benefit} src='/benefits.svg'/>
         <img style={{}} className={styles.benefit} src='/Website_Layout_2.svg'/>
