@@ -185,6 +185,16 @@ margin-right: 0;
     left: 5%;
 }
 
+@media only screen and (max-width: 400px) {
+  .subscribe_button {
+    margin-top: 17%;
+  }
+  .subscribe_button, .connect_button {
+    margin-top: 17%;
+    position: relative;
+  }
+}
+
 .main_mint{
     background:white;
     color:black;
