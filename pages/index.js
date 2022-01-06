@@ -206,7 +206,7 @@ export default function Home() {
         
       <Head>
         <title>MoonwalkerFM</title>
-        <meta name="description" content="MFM - 5,000 music adict Moonwalkers!!" />
+        <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
       <nav className={styles.navbar}>
