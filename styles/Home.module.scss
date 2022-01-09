@@ -96,7 +96,7 @@
 }
 
 .himg{
-    width:100%
+    width:100%;
 }
 .pagination{
     display: inline-flex !important;
@@ -197,13 +197,25 @@ margin-right: 0;
 }
 
 
-.main_mint{
+.main_mint {
     background:white;
     color:black;
-    margin-top:-2%;
-    padding:5em;
     text-align:center;
     margin-top:1em;
+    font-family: 'Mont Heavy';
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .main_mint {
+        padding: .7em;
+        position: absolute;
+        width: 55%;
+        border-radius: 28px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -57%);
+    }
 }
 
 .main_mint_p{
@@ -235,6 +247,31 @@ margin-right: 0;
     background:white;
     border:1px solid black;
     cursor:pointer
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .main_mint {
+      font-family: 'Mont Heavy';
+      padding: 1em;
+      background:white;
+      color:black;
+      text-align:center;
+      margin-top:1em;
+      width: 100%;
+    }
+  
+}
+
+.top_button {
+    text-align: center;
+    background:black;
+    .button {
+        background:black;
+        .h1 {
+            color:#c54653;
+        }
+    }
 }
 
 .intro{
@@ -351,7 +388,10 @@ margin-right: 0;
     font-size: 2em;
         }
 
+
 .page {
+    background:black;
+
     .attBox{
         position: inherit;
     height: auto;
@@ -613,7 +653,8 @@ margin-right: 0;
                     margin: 40px 0px;
                 }
 
-                
+       
+
   .button-orange {
     position: relative;
     background-color: #FF7A00;

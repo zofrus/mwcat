@@ -1,10 +1,49 @@
+
+/*
+import Link from 'next/link'
+
+export default function Collab() {
+
+    // Renderer callback with condition
+    const renderer = ({ days, hours, minutes, seconds, completed }) => {
+      if (completed) {
+        // Render a completed state
+        return <div><div>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
+  
+              }}>+</p>
+              <input type="text" value={`${mintAmount}`}/>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
+  
+              }}>-</p>
+            </div>
+            <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button></div>;
+      } else {
+        // Render a countdown
+        return <p className={styles.cd}>Time to launch: {days} days {hours} hs {minutes} min {seconds} sec</p>;
+      }
+    };
+    
+  return (
+    <>
+      <h1>First Post</h1>
+      <h2>
+        <Link href="/">
+          <a>Back to home</a>
+        </Link>
+      </h2>
+    </>
+  )
+}
+*/
+
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.scss'
+import styles from '../../styles/Home.module.scss'
 import React, {useRef,  useState, useEffect } from 'react';
 import { Fade } from "react-awesome-reveal";
-import { SocialIcon } from 'react-social-icons';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -18,7 +57,7 @@ import SwiperCore, {
   } from 'swiper';
   SwiperCore.use([EffectCards]);
 import Countdown from 'react-countdown';
-import ContractData from '../config/Contract.json';
+import ContractData from '../../config/Contract.json';
 const Web3 = require('web3');
 import detectEthereumProvider from '@metamask/detect-provider'
 
@@ -31,11 +70,12 @@ export default function Home() {
   const n = 15;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [heroIndex, setHeroIndex] = useState(1);
   const [mintAmount, setMintAmount] = useState(1)
 
 
   //  const _chainIdToCompare = 1; //Ethereum
-  const _chainIdToCompare = 1; //Rinkeby
+   const _chainIdToCompare = 1; //Rinkeby
   const [traits, setTraits] = useState(0)
   const [userAddress, setUserAddress] = useState('CONNECT');
   const [isLoading, setIsLoading] = useState(false);
@@ -187,6 +227,21 @@ export default function Home() {
   const clickHandle = () => {
     document.location.href = 'https://moonwalker.us20.list-manage.com/subscribe/post?u=a558426c091616f6d1b9c78a1&amp;id=d2ebdeb98f';
   }
+  
+  const galleryCount = async (thisHI) => {
+    const _ = setTimeout(() => {
+    
+          setHeroIndex(thisHI + 1)
+
+          galleryCount(thisHI == 7 ? 1 : thisHI + 1)
+      }, 200);
+    }
+
+    useEffect(async()=>{
+      galleryCount(1);
+  }, [])
+
+
 
   return (<div className={styles.page}>
         
@@ -196,39 +251,33 @@ export default function Home() {
         <link rel="icon" href="/demo4.jpg" />
       </Head>
       <nav className={styles.navbar}>
-        <Fade delay={600}>
-          <img src='/222 (1).svg'/>
-        </Fade>
-        <button className={styles.subscribe_button} onClick={clickHandle}>Newsletter</button>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
-      
-        <div hidden className={styles.csoon}>COMING SOON</div>
-        <img className={styles.himg} src='/Rectangle.png'/>
-       
-        <div hidden className={styles.main_mint}>
+      <img className={styles.benefit} src='/sohgcollab.png'/>
+             
+        <div className={styles.main_mint}>
           <h1>MINT GENERATION ZERO</h1>
           <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
           
             <Countdown date={1634645247000} renderer={renderer}/>
         </div>
-
-        <div className={styles.main}>
-          <div className={styles.main_wrapper}>
-            <h1>What is MoonwalkerFM</h1>
-            <p>Lo-Fi Moonwalkers is the first NFT collection from MoonwalkerFM connecting Artists & Investors in a way never seen before. <br/>For the first time fans can be a part of the success of a song that they love in real time. </p>
-            <br/>
-            <p>Every NFT minted gets paired with a full-length Lo-Fi song from streaming platforms, as the seasons roll out. The NFT holders of these songs can take home up to 45 <span style={{fontFamily:'Inter'}}>%</span> of the value of streaming profits in the form of rewards.</p>
-          </div>
-          <img src={`/gif.gif`}/>
-        </div>
         <div className={styles.about}>
-          <p><b>But what are Moonwalkers?</b> <br/><br/>By nature they were an angry & unpleasant species. Fur-covered aliens from a distant galaxy. Always discontent & unsatisfied with their way of living… one day, a Millenia ago, an ancient tape was discovered. This tape contained a series of audio files which brought peace & serenity to the Moonwalkers. they called this music. Lo-Fi. This inspired them to work together to explore the universe to discover new music, to keep their world safe & to never return to the days of old...</p>
-          <img src='/Utility Page (Remodified).svg'/>
+          <br/>
+          <h2><b>MoonwalkerFM Intro</b></h2>
+          <p><br/>
+          <b>MoonwalkerFM</b> is the first NFT based record label of its kind offering passive rewards to holders with a unique seasonal rollout, delivering <b>high quality 1:1 Lo-Fi songs</b> from established & up & coming artists.
+          We drop music in seasons of 50 tracks.</p>
+          <h3>Our first season launched January 7th, 2022.</h3>
+          <p> 100 Holders get associated with the 50 songs. This can be identified by the album cover art and minting number + a dapp that we're building (for next season).
+          The holders of these NFTs can <b>claim rewards quarterly</b>, this comes in the form of NFTs and ETH.
+          But most importantly, it's a platform for artists to shine & get the type of deal they deserve.<br/><br/>Our background is in the music industry.
+          <br/><br/></p>
+          <h3>We will become the Lo-Fi station of the Metaverse.</h3>
+          <br/><br/>
         </div>
-
+        
         <div className={styles.main_gallery}>
           <img src={`/s${1}.png`}/>
           <img src={`/s${2}.png`}/>
@@ -236,69 +285,6 @@ export default function Home() {
           <img src={`/s${4}.png`}/>
           <img src={`/s${5}.png`}/>
           <img src={`/s${6}.png`}/>
-        </div>
-        <img className={styles.benefit} src='/benefits.svg'/>
-        
-        <div className={styles.team}>
-          <h1>Team</h1>
-          <div className={styles.team_wrapper}>
-            <div className={styles.team_item}>
-              <img src='/cam.png'/>
-              <h3>@CameronTheMoonwalker</h3>
-              <p>Founder & Project Lead </p>
-              <SocialIcon url="https://linkedin.com/in/cameron-breen-b5670a192/" style={{ height: 25, width: 25 }} />
-              {' '}<SocialIcon url="https://twitter.com/CameronTheNFT" style={{ height: 25, width: 25 }} />
-             
-            </div>
-            <div className={styles.team_item}>
-              <img src='/skuse.jpg'/>
-              <h3>@SkuseTheMoonwalker</h3>
-              <p>Co-Founder & Marketing</p>
-            </div>
-            <div className={styles.team_item}>
-              <img src='/jelmer.jpg'/>
-              <h3>@JelmerTheMoonwalker</h3>
-              <p>Music Promotion & Playlist Lead </p>
-              <SocialIcon url="https://linkedin.com/in/jelmer-rotteveel/" style={{ height: 25, width: 25 }} />
-              {' '}<SocialIcon url="https://twitter.com/JelmerRotteveel" style={{ height: 25, width: 25 }} />
-             
-            </div>
-            <div className={styles.team_item}>
-              <img src='/Variation 9.jpg'/>
-              <h3>@NicoC</h3>
-              <p>Tech Lead</p>
-            </div>
-            <div className={styles.team_item}>
-              <img src='/Variation 10.jpg'/>
-              <h3>@vondoom</h3>
-              <p>Marketing</p>
-            </div>
-            <div className={styles.team_item}>
-              <img src='/Screen Shot 2021-09-24 at 8.00.41 pm.png'/>
-              <h3>@OLLA</h3>
-              <p>Marketing & Community Management</p>
-            </div>
-            <div className={styles.team_item}>
-              <img src='/Screen Shot 2021-09-22 at 9.40.16 pm.png'/>
-              <h3>@laura.the.artist</h3>
-              <p>Artist</p>
-            </div>
-            <div className={styles.team_item}>
-              <img src='/demo8.jpg'/>
-              <h3>@Tiarna</h3>
-              <p>Copywriter</p>
-            </div>
-          </div>
-        </div>
-
-        <img hidden style={{}} className={styles.benefit} src='/Website_Layout_2.svg'/>
-        <img className={styles.benefit} src='/Website_Layout_3.svg'/>
-        <div className={styles.top_button}>
-          <button>
-            <Link href="/">
-              <a><h1>&#8679;</h1></a>
-            </Link>
-          </button>
         </div>
     </div>
   )
