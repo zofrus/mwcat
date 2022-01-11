@@ -209,6 +209,7 @@ export default function Home() {
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
+          <Countdown date={1643029200} renderer={renderer}/>
       <nav className={styles.navbar}>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
@@ -219,8 +220,7 @@ export default function Home() {
         <div className={styles.main_mint}>
           <h1>MINT GENERATION ZERO</h1>
           <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
-          
-            <Countdown date={1643029200} renderer={renderer}/>
+       
         </div>
         <div className={styles.about}>
           <br/>
