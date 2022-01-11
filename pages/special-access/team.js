@@ -220,7 +220,7 @@ export default function Home() {
           <h1>MINT GENERATION ZERO</h1>
           <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
           
-            <Countdown date={1634645247000} renderer={renderer}/>
+            <Countdown date={1834645247000} renderer={renderer}/>
         </div>
         <div className={styles.about}>
           <br/>
