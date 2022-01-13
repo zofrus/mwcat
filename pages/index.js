@@ -205,14 +205,14 @@ export default function Home() {
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
       
-        <div hidden className={styles.csoon}>COMING SOON</div>
+        <div className={styles.csoon}>COMING SOON</div>
         <img className={styles.himg} src='/Rectangle.png'/>
        
         <div hidden className={styles.main_mint}>
           <h1>MINT GENERATION ZERO</h1>
           <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
           
-            <Countdown date={1643029200} renderer={renderer}/>
+            <Countdown date={1643025600} renderer={renderer}/>
         </div>
 
         <div className={styles.main}>

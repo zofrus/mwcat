@@ -209,7 +209,7 @@ export default function Home() {
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
-          <Countdown date={1643029200} renderer={renderer}/>
+      <Countdown date={1643029200} renderer={renderer}/>
       <nav className={styles.navbar}>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
