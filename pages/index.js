@@ -205,7 +205,6 @@ export default function Home() {
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
       
-        <div className={styles.csoon}>COMING SOON</div>
         <img className={styles.himg} src='/Rectangle.png'/>
        
         <div hidden className={styles.main_mint}>
