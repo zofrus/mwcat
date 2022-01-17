@@ -59,19 +59,25 @@ export default function Home() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
-      return <div><div>
-            <p className={styles.main_mint_s} onClick={() => { 
-              setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
+      return <div className={styles.main_mint_box}>
+        <h1>MINT GENERATION ZERO</h1>
+          <p className={styles.main_mint_p}>Limited supply remaining!
+          <br/>Total of 1500 GEN-0 Moonwalker NFTs.<br/>
+          <b></b> 0.06 ETH </p>
+            <div>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
 
-            }}>+</p>
-            <input type="text" value={`${mintAmount}`}/>
-            <p className={styles.main_mint_s} onClick={() => { 
-              setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
+              }}>+</p>
+              <input className={styles.main_mint_input} type="text" value={`${mintAmount}`}/>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
 
-            }}>-</p>
-          </div>
-          <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button></div>;
-    } else {
+              }}>-</p>
+            </div>
+            <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button>
+          </div>;
+      } else {
       // Render a countdown
       return <p className={styles.cd}>Time to launch: {days} days {hours} hs {minutes} min {seconds} sec</p>;
     }

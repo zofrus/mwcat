@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 import styles from '../styles/Home.module.scss'
 import React, {useRef,  useState, useEffect } from 'react';
 import { Fade } from "react-awesome-reveal";
 import { SocialIcon } from 'react-social-icons';
+import { env } from 'process';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -56,25 +58,43 @@ export default function Home() {
       const totalSupply = await contract.methods.totalSupply().call();
       setRemainingNFTs(maxSupply - totalSupply);
   }
+
   // Renderer callback with condition
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
-      return <div><div>
-            <p className={styles.main_mint_s} onClick={() => { 
-              setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
+      return <div className={styles.main_mint_box}>
+        <h1>MINT GENERATION ZERO</h1>
+          <p className={styles.main_mint_p}>Limited supply remaining!
+          <br/>Total of 1500 GEN-0 Moonwalker NFTs.<br/>
+          <b></b> 0.06 ETH </p>
+            <div>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
 
-            }}>+</p>
-            <input type="text" value={`${mintAmount}`}/>
-            <p className={styles.main_mint_s} onClick={() => { 
-              setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
+              }}>+</p>
+              <input className={styles.main_mint_input} type="text" value={`${mintAmount}`}/>
+              <p className={styles.main_mint_s} onClick={() => { 
+                setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
 
-            }}>-</p>
-          </div>
-          <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button></div>;
+              }}>-</p>
+            </div>
+            <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button>
+          </div>;
     } else {
       // Render a countdown
-      return <p className={styles.cd}>Time to launch: {days} days {hours} hs {minutes} min {seconds} sec</p>;
+      return (
+        <>
+          <div className={styles.cd}>PUBLIC SALE<br/> {days} days {hours}:{minutes}:{seconds}</div>
+          <div className={styles.main_subscribe}>
+            <p> Will you be ready?</p><br/>
+            Register now to get an exclusive alert for the upcoming public sale!
+            <br/><br/>
+
+            <MailchimpSubscribe url={'https://moonwalker.us20.list-manage.com/subscribe/post?u=a558426c091616f6d1b9c78a1&amp;id=d2ebdeb98f'}/>
+          </div>
+        </>
+      )
     }
   };
 
@@ -104,8 +124,7 @@ export default function Home() {
             // loadDataAfterAccountDetected();
           } else if (accounts[0] !== userAddress) {
             const chainId = await ethereum.request({ method: 'eth_chainId' });
-            setUserAddress(chainId == _chainIdToCompare ? accounts[0] : 'CONNECT');
-            
+            setUserAddress(chainId == _chainIdToCompare ? accounts[0] : 'CONNECT');       
             
           }
         }
@@ -196,23 +215,19 @@ export default function Home() {
         <link rel="icon" href="/demo4.jpg" />
       </Head>
       <nav className={styles.navbar}>
-        <Fade delay={600}>
+        <Fade delay={100}>
           <img src='/222 (1).svg'/>
         </Fade>
-        <button className={styles.subscribe_button} onClick={clickHandle}>Newsletter</button>
+        <button hidden className={styles.subscribe_button} onClick={clickHandle}>Newsletter</button>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
       
-        <div className={styles.csoon}>COMING SOON</div>
         <img className={styles.himg} src='/Rectangle.png'/>
        
-        <div hidden className={styles.main_mint}>
-          <h1>MINT GENERATION ZERO</h1>
-          <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
-          
-            <Countdown date={1643025600} renderer={renderer}/>
+        <div className={styles.main_mint}>          
+          <Countdown date={1643029200000} renderer={renderer}/>
         </div>
 
         <div className={styles.main}>
@@ -294,7 +309,7 @@ export default function Home() {
         <img hidden style={{}} className={styles.benefit} src='/Website_Layout_2.svg'/>
         <img className={styles.benefit} src='/Website_Layout_3.svg'/>
         <div className={styles.top_button}>
-          <button>
+          <button className={styles.bottom_nav}>
             <Link href="/">
               <a><h1>&#8679;</h1></a>
             </Link>
