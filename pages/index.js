@@ -1,3 +1,4 @@
+import Analytics from "api/analytics"
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -213,6 +214,8 @@ export default function Home() {
         <title>MoonwalkerFM</title>
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
+        <Analytics />
+        <meta name="facebook-domain-verification" content="xdcrn5yoxw930r2e2wmaoboay7savd" />
       </Head>
       <nav className={styles.navbar}>
         <Fade delay={100}>
