@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.scss'
@@ -59,18 +60,24 @@ export default function Home() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
-      return <div><div>
+      return <div className={styles.main_mint_box}>
+      <h1>CAMERON'S SECRET MINT</h1>
+        <p className={styles.main_mint_p}>Limited supply remaining!
+        <br/>Total of 1500 GEN-0 Moonwalker NFTs.<br/>
+        <b></b> 0.06 ETH </p>
+          <div>
             <p className={styles.main_mint_s} onClick={() => { 
               setMintAmount(mintAmount == 10 ? 10 : mintAmount+1) ;
 
             }}>+</p>
-            <input type="text" value={`${mintAmount}`}/>
+            <input className={styles.main_mint_input} type="text" value={`${mintAmount}`}/>
             <p className={styles.main_mint_s} onClick={() => { 
               setMintAmount(mintAmount == 0 ? 0 : mintAmount-1) ;
 
             }}>-</p>
           </div>
-          <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button></div>;
+          <button  className={styles.mint_button} onClick={()=>mint(mintAmount)}> Mint {mintAmount} Moonwalker!</button>
+        </div>;
     } else {
       // Render a countdown
       return <p className={styles.cd}>Time to launch: {days} days {hours} hs {minutes} min {seconds} sec</p>;
@@ -209,18 +216,18 @@ export default function Home() {
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
-      <Countdown date={1643029200} renderer={renderer}/>
       <nav className={styles.navbar}>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
-      <img className={styles.benefit} src='/ghidorahcollab.png'/>
+      <img className={styles.benefit} src='/camerons-secret-link.svg'/>
              
         <div className={styles.main_mint}>
-          <h1>MINT GENERATION ZERO</h1>
-          <p className={styles.main_mint_p}>Limited supply remaining!<br/>Only 1500 GEN-0 Moonwalker NFTs in total <br/><b>each cost</b> 0.06 ETH</p>
-       
+          <h1>CAMERON'S SECRET MINT</h1>
+          <p className={styles.main_mint_p}>You've been selected<br/>Less than 1000 Gen-0 NFT's Left <br/><b>each cost</b> 0.06 ETH</p>
+          
+            <Countdown date={1634645247000} renderer={renderer}/>
         </div>
         <div className={styles.about}>
           <br/>
