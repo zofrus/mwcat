@@ -1,3 +1,11 @@
+/*
+
+This was a creative idea, also check out the next.js script component,
+it will be helpful when adding the google analytics link
+
+https://nextjs.org/docs/basic-features/script
+
+
 function Analytics() {
   return (
 <script>
@@ -19,3 +27,4 @@ function Analytics() {
 }
 
 export default Analytics;
+*/

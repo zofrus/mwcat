@@ -1,4 +1,3 @@
-import Analytics from "api/analytics"
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -86,7 +85,7 @@ export default function Home() {
       // Render a countdown
       return (
         <>
-          <div className={styles.cd}>PUBLIC SALE<br/> {days} days {hours}:{minutes}:{seconds}</div>
+          <div className={styles.cd}>PUBLIC SALE <br/> JANUARY 24TH 9AM EST<br/> {days} days {hours}:{minutes}:{seconds}</div>
           <div className={styles.main_subscribe}>
             <p> Will you be ready?</p><br/>
             Register now to get an exclusive alert for the upcoming public sale!
@@ -214,7 +213,6 @@ export default function Home() {
         <title>MoonwalkerFM</title>
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
-        <Analytics />
         <meta name="facebook-domain-verification" content="xdcrn5yoxw930r2e2wmaoboay7savd" />
       </Head>
       <nav className={styles.navbar}>
@@ -230,7 +228,7 @@ export default function Home() {
         <img className={styles.himg} src='/Rectangle.png'/>
        
         <div className={styles.main_mint}>          
-          <Countdown date={1643029200000} renderer={renderer}/>
+          <Countdown date={1643032800000} renderer={renderer}/>
         </div>
 
         <div className={styles.main}>
