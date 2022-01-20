@@ -219,6 +219,9 @@ export default function Home() {
         <Fade delay={100}>
           <img src='/222 (1).svg'/>
         </Fade>
+        <SocialIcon url="http://discord.gg/MoonwalkerFM" fgColor="#fff" style={{ height: 75, width: 75 }} />
+       {' '}
+        <SocialIcon url="https://twitter.com/MoonwalkerFM" fgColor="#fff" style={{ height: 75, width: 75 }} />
         <button hidden className={styles.subscribe_button} onClick={clickHandle}>Newsletter</button>
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
