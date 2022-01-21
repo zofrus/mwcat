@@ -88,7 +88,7 @@ export default function Home() {
           <div className={styles.cd}>PUBLIC SALE <br/> JANUARY 24TH 9AM EST<br/> {days} days {hours}:{minutes}:{seconds}</div>
           <div className={styles.main_subscribe}>
             <p> Will you be ready?</p><br/>
-            Register now to get an exclusive alert for the upcoming public sale!
+            Register now to get exclusive access for the upcoming public sale!
             <br/><br/>
 
             <MailchimpSubscribe url={'https://moonwalker.us20.list-manage.com/subscribe/post?u=a558426c091616f6d1b9c78a1&amp;id=d2ebdeb98f'}/>
@@ -211,7 +211,7 @@ export default function Home() {
         
       <Head>
         <title>MoonwalkerFM</title>
-        <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
+        <meta name="description" content="MoonWalkerFM - The First NFT Music Label!" />
         <link rel="icon" href="/demo4.jpg" />
         <meta name="facebook-domain-verification" content="xdcrn5yoxw930r2e2wmaoboay7savd" />
       </Head>
@@ -277,7 +277,7 @@ export default function Home() {
             <div className={styles.team_item}>
               <img src='/jelmer.jpg'/>
               <h3>@JelmerTheMoonwalker</h3>
-              <p>Music Promotion & Playlist Lead </p>
+              <p>Co-Founder, Music Promotion & Playlist Lead </p>
               <SocialIcon url="https://linkedin.com/in/jelmer-rotteveel/" style={{ height: 25, width: 25 }} />
               {' '}<SocialIcon url="https://twitter.com/JelmerRotteveel" style={{ height: 25, width: 25 }} />
              
