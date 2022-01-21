@@ -162,7 +162,7 @@ export default function Home() {
 
   const mint = async(mintValue) => {
     if(userAddress == 'CONNECT') {
-      return alert('Please Connect Your Wallet First (Top Of Page)');
+      return alert('Please connect your wallet first (at the top of page)');
     }
     
     if(mintValue == 0) { return; }
