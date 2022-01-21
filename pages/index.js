@@ -87,7 +87,7 @@ export default function Home() {
         <>
           <div className={styles.cd}>PUBLIC SALE <br/> JANUARY 24TH 9AM EST<br/> {days} days {hours}:{minutes}:{seconds}</div>
           <div className={styles.main_subscribe}>
-            <p> Will you be ready?</p><br/>
+            <p>Sign up for the public sale</p><br/>
             Register now to get exclusive access for the upcoming public sale!
             <br/><br/>
 
