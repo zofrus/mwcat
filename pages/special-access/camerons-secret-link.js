@@ -1,8 +1,8 @@
-
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.scss'
 import React, {useRef,  useState, useEffect } from 'react';
+import { SocialIcon } from 'react-social-icons';
 import { Fade } from "react-awesome-reveal";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -210,19 +210,21 @@ export default function Home() {
 
 
   return (<div className={styles.page}>
-        
+
       <Head>
         <title>MoonwalkerFM</title>
         <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
       <nav className={styles.navbar}>
+        <SocialIcon url="http://discord.gg/MoonwalkerFM" fgColor="#fff" style={{ height: 75, width: 75 }} />
+        {' '}
+        <SocialIcon url="https://twitter.com/MoonwalkerFM" fgColor="#fff" style={{ height: 75, width: 75 }} />
         <button className={styles.connect_button} onClick={ () => {
             connectMetamaskPressed();
           }}>{userAddress=='CONNECT' ? 'Connect':`${userAddress.substring(0,3)}...${userAddress.substr(-3)}`}</button>
       </nav>
-      <img className={styles.benefit} src='/camerons-secret-link.svg'/>
-             
+      <img className={styles.benefit} src='/camsecret.png'/>
         <div className={styles.main_mint}>
           <h1>CAMERON'S SECRET MINT</h1>
           <p className={styles.main_mint_p}>You've been selected<br/>Less than 1000 Gen-0 NFT's Left <br/><b>each cost</b> 0.06 ETH</p>
