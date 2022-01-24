@@ -61,7 +61,7 @@ export default function Home() {
     if (completed) {
       // Render a completed state
       return <div className={styles.main_mint_box}>
-      <h1>CAMERON'S SECRET MINT</h1>
+      <h1>EXCLUSIVE ACCESS</h1>
         <p className={styles.main_mint_p}>Limited supply remaining!
         <br/>Total of 1500 GEN-0 Moonwalker NFTs.<br/>
         <b></b> 0.06 ETH </p>
