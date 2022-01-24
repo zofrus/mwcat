@@ -213,7 +213,7 @@ export default function Home() {
 
       <Head>
         <title>MoonwalkerFM</title>
-        <meta name="description" content="MoonWalkerFM - The First NFT Music Label!!" />
+        <meta name="description" content="MoonWalkerFM - The First NFT Music Label!" />
         <link rel="icon" href="/demo4.jpg" />
       </Head>
       <nav className={styles.navbar}>
@@ -226,7 +226,7 @@ export default function Home() {
       </nav>
       <img className={styles.benefit} src='/camsecret.png'/>
         <div className={styles.main_mint}>
-          <h1>CAMERON'S SECRET MINT</h1>
+          <h1>EXCLUSIVE ACCESS</h1>
           <p className={styles.main_mint_p}>You've been selected<br/>Less than 1000 Gen-0 NFT's Left <br/><b>each cost</b> 0.06 ETH</p>
           
             <Countdown date={1634645247000} renderer={renderer}/>
