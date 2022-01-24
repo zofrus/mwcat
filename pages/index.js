@@ -231,7 +231,7 @@ export default function Home() {
         <img className={styles.himg} src='/Rectangle.png'/>
        
         <div className={styles.main_mint}>          
-          <Countdown date={1643032800000} renderer={renderer}/>
+          <Countdown date={1643030580000} renderer={renderer}/>
         </div>
 
         <div className={styles.main}>
