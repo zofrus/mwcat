@@ -238,9 +238,9 @@ export default function Home() {
           <b>MoonwalkerFM</b> is the first NFT based record label of its kind offering passive rewards to holders with a unique seasonal rollout, delivering <b>high quality 1:1 Lo-Fi songs</b> from established & up & coming artists.
           We drop music in seasons of 50 tracks.</p>
           <h3>Our first season launched January 7th, 2022.</h3>
-          <p> 100 Holders get associated with the 50 songs. This can be identified by the album cover art and minting number + a dapp that we're building (for next season).
+          <p> 100 Holders get associated with the 50 songs. This can be identified by the album cover art and minting number + a dapp that we are building (for next season).
           The holders of these NFTs can <b>claim rewards quarterly</b>, this comes in the form of NFTs and ETH.
-          But most importantly, it's a platform for artists to shine & get the type of deal they deserve.<br/><br/>Our background is in the music industry.
+          But most importantly, it is a platform for artists to shine & get the type of deal they deserve.<br/><br/>Our background is in the music industry.
           <br/><br/></p>
           <h3>We will become the Lo-Fi station of the Metaverse.</h3>
           <br/><br/>
