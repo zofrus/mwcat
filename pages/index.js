@@ -273,6 +273,8 @@ export default function Home() {
               <img src='/skuse.jpg'/>
               <h3>@SkuseTheMoonwalker</h3>
               <p>Co-Founder & Marketing</p>
+              <SocialIcon url="https://www.linkedin.com/in/jordan-skuse-013005138/" style={{ height: 25, width: 25 }} />
+              {' '}<SocialIcon url="https://twitter.com/SkuseNFT" style={{ height: 25, width: 25 }} />
             </div>
             <div className={styles.team_item}>
               <img src='/jelmer.jpg'/>
