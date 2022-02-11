@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
 
